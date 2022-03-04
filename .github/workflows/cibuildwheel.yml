@@ -8,7 +8,7 @@ on:
 
 jobs:
   package-wheel:
-    runs-on: ${{ matrix.os }}, ${{ matrix.arch }},
+    runs-on: ${{ matrix.os }}, ${{ matrix.arch }}
     strategy:
       fail-fast: false
       matrix:
