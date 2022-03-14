@@ -30,6 +30,8 @@ jobs:
           CIBW_SKIP: '*-musllinux*'
           CIBW_BEFORE_ALL: yum install -y libcurl-devel
         run: |
+          python --version
+          pip install numpy
           python -m pip install --upgrade pip setuptools
           pip install cibuildwheel
           cibuildwheel --output-dir dist
